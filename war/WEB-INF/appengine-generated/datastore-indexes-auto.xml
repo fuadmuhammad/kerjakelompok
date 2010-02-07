@@ -1,4 +1,11 @@
-<!-- Indices written at Sat, 6 Feb 2010 11:13:23 UTC -->
+<!-- Indices written at Sun, 7 Feb 2010 11:02:24 UTC -->
 
-<datastore-indexes/>
+<datastore-indexes>
 
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Question" ancestor="false" source="auto">
+        <property name="created" direction="desc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>

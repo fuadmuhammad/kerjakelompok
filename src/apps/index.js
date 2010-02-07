@@ -5,7 +5,7 @@ var Question = require("models/question").Question;
 
 exports.app = function(env) {
     return exports[env.REQUEST_METHOD](env);
-}
+};
 
 exports.GET = function(env) {
     var questions = Question.all().fetch();
@@ -14,10 +14,10 @@ exports.GET = function(env) {
     }
     var params = new Request(env).params();
     return {data: {
-	test: "welcome"
+    	test: "welcome"
     }};
 
-}
+};
 
 exports.POST = function(env) {
     var params = new Request(env).POST(),

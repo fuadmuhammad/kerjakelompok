@@ -9,7 +9,10 @@ var ContentLength = require("jack/contentlength").ContentLength,
 var Dispatch = require("nitro/dispatch").Dispatch,
     Path = require("nitro/path").Path,
     Errors = require("nitro/errors").Errors,
-    Render = require("nitro/render").Render;		
+    Render = require("nitro/render").Render;
+
+require("./src/formatters");
+require("./src/dateutils");
 
 var Wrap = require("./src/wrap").Wrap;
 
@@ -24,10 +27,10 @@ exports.debug = ShowExceptions(exports.app);
 // Run on development server.
 exports.local = function(app) {
     return require("jack/reloader").Reloader(module.id, "debug");
-}
+};
 
 // Run on Google App Engine hosting infrastructure.
 exports.hosted = function(app) {
 	return app;
-}
+};
 
