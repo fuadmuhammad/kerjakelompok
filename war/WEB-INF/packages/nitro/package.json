@@ -1,0 +1,15 @@
+{
+    "name": "nitro",
+    "description": "A Web Application Framework",
+    "keywords": ["web", "framework", "jsgi"],
+    "author": "George Moschovitis",
+    "email": "george.moschovitis@gmail.com",
+    "dependencies": ["jack", "template"],
+    "contributors": [
+        "Kris Kowal (http://askawizard.blogspot.com/)"
+    ],
+    "lib": "lib",
+    "main": "examples/simple/jackconfig",
+    "lean": ["lib"]
+}
+

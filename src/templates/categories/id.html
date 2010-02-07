@@ -1,0 +1,19 @@
+{.extends "/layout/page.html"}
+
+{.block breadcrumbs}
+{.section category}
+    <a href="/">Home</a> / <b>{label}</b>
+{.end}
+{.end breadcrumbs}
+
+{.block content}
+<section class="main hfeed">
+{.repeated section articles} 
+{.include "/article.inc.html"}
+{.end}
+
+{.include "/paginator.inc.html"}
+</section>
+
+{aside}
+{.end content}

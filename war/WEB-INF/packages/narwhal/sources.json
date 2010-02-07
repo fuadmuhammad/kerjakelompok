@@ -1,0 +1,227 @@
+{
+    "version": 1,
+    "packages": {
+        "narwhal": {
+            "type": "github",
+            "user": "tlrobinson"
+        },
+        "narwhal-jsc": {
+            "type": "github",
+            "user": "tlrobinson"
+        },
+        "narwhal-v8": {
+            "type": "github",
+            "user": "tlrobinson"
+        },
+        "narwhal-johnson": {
+            "type": "github",
+            "user": "tlrobinson"
+        },
+        "narwhal-xulrunner": {
+            "type": "github",
+            "user": "Gozala"
+        },
+        "narwhal-jaxer": {
+            "type": "github",
+            "user": "smith"
+        },
+        "jack": {
+            "type": "github",
+            "user": "tlrobinson"
+        },
+        "nitro": {
+            "type": "github",
+            "user": "gmosx"
+        },
+        "chiron": {
+            "type": "github",
+            "user": "kriskowal"
+        },
+        "narcissus": {
+            "type": "github",
+            "user": "kriskowal"
+        },
+        "creolejs": {
+            "type": "github",
+            "user": "kriskowal"
+        },
+        "browserjs": {
+            "type": "github",
+            "user": "tlrobinson"
+        },
+        "inspec": {
+            "type": "github",
+            "user": "aq1018"
+        },
+        "kupo": {
+            "type": "github",
+            "user": "janv"
+        },
+        "appengine": {
+            "type": "github",
+            "user": "gmosx"
+        },
+        "jack-servlet": {
+            "type": "github",
+            "user": "tlrobinson"
+        },
+        "appengine-java-sdk": {
+            "type": "inline",
+            "package.json": {
+                "name": "gae",
+                "title": "Google App Engine Java SDK",
+                "description": "Java components necessary for deploying applications on Google's App Engine.",
+                "author": "Google",
+                "version": "1.2.2",
+                "dependencies": ["jack-servlet", "jack", "narwhal"],
+                "lib": [],
+                "type": "zip",
+                "location": "http://googleappengine.googlecode.com/files/appengine-java-sdk-1.2.2.zip"
+            }
+        },
+        "env": {
+            "type": "github",
+            "name": "env-js",
+            "user": "kriskowal",
+            "package.json": {}
+        },
+        "template": {
+            "type": "github",
+            "user": "gmosx"
+        },
+        "markdown": {
+            "type": "github",
+            "user": "gmosx"
+        },
+        "xbin": {
+            "type": "github",
+            "user": "kriskowal"
+        },
+        "wiky": {
+            "type": "github",
+            "user": "kriskowal"
+        },
+        "jsdocs": {
+            "type": "github",
+            "user": "Gozala"
+        },
+        "syntax-stroop": {
+            "type": "github",
+            "user": "Gozala"
+        },
+        "seethrough": {
+            "type": "github",
+            "user": "Gozala"
+        },
+        "jack-dav": {
+            "type": "github",
+            "user": "tlrobinson"
+        },
+        "jsont": {
+            "type": "github",
+            "user": "tlrobinson"
+        },
+        "activejs": {
+            "type": "github",
+            "user": "tlrobinson",
+            "ref": "package"
+        },
+        "speller": {
+            "type": "github",
+            "user": "past"
+        },
+        "jake": {
+            "type": "github",
+            "user": "280north"
+        },
+        "json-rpc": {
+            "type": "github",
+            "user": "tlrobinson"
+        },
+        "prototype": {
+            "type": "github",
+            "name": "prototype-asp",
+            "user": "smith",
+            "ref": "narwhal-global"
+        },
+        "qunit": {
+            "type": "github",
+            "user": "jquery"
+        },
+        "oauth": {
+            "type": "github",
+            "user": "cloudwork"
+        },
+        "bogart": {
+            "type": "github",
+            "user": "nrstott"
+        },
+        "json-template": {
+            "type": "github",
+            "user": "Gozala"
+        },
+        "ejs": {
+            "type": "github",
+            "user": "nrstott",
+            "name": "narwhal-ejs"
+        },
+        "couchdb": {
+            "type": "github",
+            "user": "nrstott",
+            "name": "narwhal-couchdb"
+        },
+        "mongodb": {
+            "type": "github",
+            "user": "mrclash",
+            "name": "narwhal-mongodb"
+        },
+        "underscore": {
+            "type": "github",
+            "user": "kriskowal"
+        },
+        "silk": {
+            "type": "github",
+            "user": "kriskowal"
+        },
+        "objective-j": {
+            "type": "github",
+            "user": "280north",
+            "name": "objective-j-package"
+        },
+        "cappuccino": {
+            "type": "github",
+            "user": "280north",
+            "name": "cappuccino-package"
+        },
+        "ojunit": {
+            "type": "github",
+            "user": "280north"
+        },
+        "qxoo": {
+            "type": "github",
+            "user": "fjakobs",
+            "name": "qxoo"
+        },
+        "barista": {
+            "type": "github",
+            "user": "hammerdr"
+        },
+        "ojmoq": {
+            "type": "github",
+            "user": "hammerdr"
+        },
+        "sizzle": {
+            "type": "github",
+            "user": "gmosx"
+        },
+        "observable": {
+            "type": "github",
+            "user": "nrstott",
+            "name": "observable-js"
+        }
+        "sizzle": {
+            "type": "github",
+            "user": "gmosx"
+        }
+    }
+}

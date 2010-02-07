@@ -1,0 +1,10 @@
+{
+    "name": "template",
+    "description": "A simple templating engine",
+    "keywords": ["template", "text", "json"],
+    "author": "George Moschovitis",
+    "email": "george.moschovitis@gmail.com",
+    "dependencies": [],
+    "lib": "lib",
+}
+

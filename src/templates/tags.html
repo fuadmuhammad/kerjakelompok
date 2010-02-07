@@ -1,0 +1,11 @@
+{.extends "/layout/page.html"}
+
+{.block breadcrumbs}
+<a href="/">Home</a> / <b>Tags</b>
+{.end breadcrumbs} 
+
+{.block content}
+<div class="tagcloud tags" style="line-height: {maxSize}em">
+    {tags}
+</div>
+{.end content}

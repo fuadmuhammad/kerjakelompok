@@ -1,0 +1,17 @@
+{.extends "/layout/page.html"}
+
+{.block breadcrumbs}
+<a href="/">Home</a> / <a href="/tags">Tags</a> / <b>articles tagged with '{tag}'</b>
+{.end breadcrumbs}    
+
+{.block content}
+<section class="main hfeed">
+{.repeated section articles} 
+{.include "/article.inc.html"}
+{.end}
+
+{.include "/paginator.inc.html"}
+</section>
+
+{aside}
+{.end content}

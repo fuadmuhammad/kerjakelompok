@@ -1,0 +1,12 @@
+{.extends "/layout/error.html"}
+
+{.block content}
+<h1>{status} {statusString}</h1>
+<h2>while rendering '{path}'</h2>
+<p>
+{error}
+</p>
+<p style="margin-top: 2em">
+    <a href="{path}">Retry</a> or go to <a href="/">home</a>.
+</p>
+{.end content}

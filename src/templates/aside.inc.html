@@ -1,0 +1,21 @@
+<aside>
+    <h2>Admin</h2>
+    <ul>
+        <li><a href="/edit">New article</a></li>
+        <li><a href="/scripts/update-db">Reset db</a></li>
+    </ul>
+    
+    <h2>Categories</h2>
+    <ul>
+        {.repeated section categories}
+        <li><a href="/categories/*{term}">{label}</a></li>
+        {.end}
+    </ul>
+
+    <h2>Latest comments</h2>
+    <ul>
+        {.repeated section comments}
+        <li>{name} on <a href="/*">{name}</a></li>
+        {.end}
+    </ul>
+</aside>

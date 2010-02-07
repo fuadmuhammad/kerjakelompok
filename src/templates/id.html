@@ -1,0 +1,49 @@
+{.extends "/layout/page.html"}
+
+{.block script}
+$(document).bind("ready", function() {
+    $(".delete").bind("click", function(e) {
+        e.preventDefault();
+        if (confirm("Are you sure you want to delete?")) {
+            $.post(e.target.href, { _method: "DELETE" });
+            $(this).parents(".comment").hide();
+        }
+    });
+    
+    $("#commentForm").bind("submit", function(e) {
+        e.preventDefault();
+        $.post(e.target.action, {
+            parentKey: $("#commentForm #parentKey").val(),
+            name: $("#commentForm #name").val(),
+            email: $("#commentForm #email").val(),
+            uri: $("#commentForm #uri").val(),
+            content: $("#commentForm #content").val(),
+        }, function(data) {
+            $("#commentList").append(data);
+            e.target.reset();
+        });
+    });
+});
+{.end script}
+
+{.block content}
+{.section article}
+<section class="main hfeed">
+
+{.include "/article.inc.html"}
+
+<h3 id="comments">{commentsCount} Comments</h3>
+
+<section id="commentList" class="comments">
+{.repeated section comments}
+    {.include "/comments/comment.inc.html"}
+{.end}
+<p class="clear" />
+</section>
+
+{.include "/comments/form.inc.html"}
+</section>
+{.end}
+
+{aside}
+{.end content}

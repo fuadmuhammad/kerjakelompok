@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>{breadcrumbs|bctitle}</title>
+        <link rel="stylesheet" media="screen" href="/screen.css" type="text/css" />
+        <link rel="alternate" title="Blog Atom feed" href="/index.atom" type="application/atom+xml" />
+        <meta name="description" content="A simple blog, powered by Nitro" />
+        <meta name="keywords" content="{.meta-left}metaKeywords{.meta-right}" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        {head}
+    </head>
+    <body>
+        <header>
+            <h1><a href="/">A simple Blog</a></h1>
+            <h2>The canonical Nitro example</h2>
+            <nav>{breadcrumbs}</nav>
+        </header>    
+        {content}
+        <footer>
+            <p><img src="/nitro.png" /></p>
+        </footer>
+        {scripts}
+        <script src="/jquery.js" type="text/javascript"></script>
+        <script>
+            {script}
+        </script>
+    </body>
+</html>    
